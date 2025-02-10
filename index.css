@@ -7,6 +7,9 @@ body{
     padding-right: 130px;
     margin-top:30px ;
 }
+.menuBarico{
+    display: none;
+}
 body{
     max-width: 1450px;
     margin-left: auto;
@@ -35,6 +38,7 @@ font-size:16px ;
 .barIcon{
    margin-left: 20px;
 }
+
 /* endind style head */
 main h2{
     color:#3A3A3A ;
@@ -329,31 +333,38 @@ font-family: "Manrope", serif;
 }
 
 
- @media screen and(max-width:1440px) {
-    .cardParent{
-       grid-template-columns: 3fr;
-      }
-      #container{
-        padding-left:30px;
-        padding-right:30px;
-    } 
+ @media screen and(max-width:1024px) {
+    .halfwidth{
+        width: auto;
+        height: 100px;
+    }
+    main h2{
+        font-size: 30px;
+    }
+    .Para{
+        font-size: 10px;
+    }
  }
-@media screen and(max-width:768px){
-    #container{
-        padding-left:30px;
-        padding-right:30px;
+@media screen and(max-width:834px){
+   
+    .cardParent{
+        flex-direction: column-reverse;
+    }   
+}
+@media screen and(max-width:768px) {
+    #meanBar{
+        display:none;
+    }
+    .menuBarico{
+        display:block;
+    }
+}
+@media screen and(max-width:480px) {
+    #meanBar{
+        display: none;
     } 
-    main{ 
-         align-items: center;
-        flex-direction: column;
-     } 
-     .Para{
-        
-        width:100%;
-        
-    } 
-    .head2{
-      width: 100%;
+    #meanBar{
+        display: none;
     }
 }
 
